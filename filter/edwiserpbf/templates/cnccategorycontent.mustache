@@ -1,0 +1,33 @@
+
+<div class="navbar-carousel collapsed">
+    <div class="navbar-inner">
+        <div class="mob-navbar"></div>
+        <ol class="navbar-item-container">
+            {{#categories}}
+            <li class="navitem {{#active}}active{{/active}}" data-categoryid="{{id}}" data-coursecount="{{coursecount}}">
+                <div class="navitem-content">
+                    <P>{{{name}}}</P>
+                    <p>{{{coursecount}}}</p>
+                </div>
+            </li>
+            {{/categories}}
+        </ol>
+    </div>
+
+    <button class="dropdown-btn"><img
+            src="{{cdnurl}}/CDN/coursesncategories/dropdown-icon.svg"
+            alt="dropdown icon" /></button>
+
+    <button class="nav-left-arrow">
+        <img src="{{cdnurl}}/CDN/coursesncategories/nav-indicator-dark.svg"
+            alt="nav indicator dark" />
+        <img src="{{cdnurl}}/CDN/coursesncategories/nav-indicator-light.svg"
+            alt="nav indicator light" />
+    </button>
+    <button class="nav-right-arrow">
+        <img src="{{cdnurl}}/CDN/coursesncategories/nav-indicator-dark.svg"
+            alt="nav indicator dark" />
+        <img src="{{cdnurl}}/CDN/coursesncategories/nav-indicator-light.svg"
+            alt="nav indicator light" />
+    </button>
+</div>
